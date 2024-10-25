@@ -1,3 +1,5 @@
+git fetch
+git pull
 docker stop wsp-assignment-2
 docker rm wsp-assignment-2
 cd C:\Users\Administrator\Documents\WSP Assignment 2 Server\WSP-Assignment-2
