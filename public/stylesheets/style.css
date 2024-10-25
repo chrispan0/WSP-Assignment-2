@@ -1,8 +1,254 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #7c82f7;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2 px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.website {
+  width: 800px;
+  height: 800px;
+}
+
+header {
+  background: linear-gradient(45deg, #121df8, #7ca9f7);
+  padding: 2em 5;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+nav {
+  margin-top: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5em;
+  font-weight: bold;
+  position: relative;
+  padding: 0.5em 0;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7cd0f7;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #7cd0f7;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+section#home {
+  padding: 5em 0;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: -3em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+section#home h2 {
+  font-size: 2.8em;
+  color: #7ca9f7;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+section#home p {
+  font-size: 1.4em;
+  color: #7c98f7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 4em;
+}
+
+footer a {
+  color: #121df8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer p {
+  margin-bottom: 0.5em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  nav a {
+    display: block;
+    margin: 1em 0;
+  }
+
+  section#home h2 {
+    font-size: 2.3em;
+  }
+
+  section#home p {
+    font-size: 1.1em;
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  nav a {
+    margin: 0 1em;
+  }
+
+  section#home h2 {
+    font-size: 2.6em;
+  }
+
+  section#home p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  header h1 {
+    font-size: 3em;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 1.5em;
+    padding-bottom: 0.2em;
+  }
+
+  section#home h2 {
+    font-size: 2.8em;
+  }
+
+  section#home p {
+    font-size: 1.4em;
+  }
+}
+
+.portrait {
+  width: 150px;
+  border-radius: 50%;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #7c82f7;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+/*I know this is redundant however I could not find out how to add more types in one input*/
+form input[type="submit"]:hover {
+  background-color: #121df8;
+}
+
+form input[type="reset"] {
+  background-color: #7c82f7;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+form input[type="reset"]:hover {
+  background-color: #121df8;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 1em;
+  }
+
+  form input,
+  form textarea {
+    padding: 0.7em;
+  }
+
+  form input[type="submit"] {
+    padding: 0.8em;
+  }
 }
