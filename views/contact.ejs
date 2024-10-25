@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact | Chris Panetta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Chris Panetta</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact Me</a>
+          <a href="github.html">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form
+          action="mailto:chris.panetta@ontariotechu.net"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Add Name Here"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Add Name Here"
+            required
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Add Phone Number Here"
+            required
+          />
+
+          <label for="comments">Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            placeholder="Add Comments Here"
+          ></textarea>
+
+          <p>
+            <label for="where">How did you find this form?</label>
+            <select name="where">
+              <option value="DF">Default</option>
+              <option value="TA">You're the TA</option>
+              <option value="Prof">You're the Prof</option>
+              <option value="Fr/Fa">You're a Friend or Family</option>
+              <option value="Other">Other</option>
+            </select>
+          </p>
+          <br />
+          <label for="bsf"> Am I your Best Friend Forever?</label>
+          <input type="checkbox" name="bsf" />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Chris Panetta. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
