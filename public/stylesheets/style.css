@@ -1,11 +1,9 @@
-/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #7c82f7;
@@ -17,9 +15,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
 }
 
-/* Container for central alignment */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -27,14 +34,13 @@ body {
   text-align: center;
 }
 
-/* Full-width header */
 header {
   background: linear-gradient(45deg, #121df8, #7ca9f7);
   padding: 2em;
   text-align: center;
   color: white;
   width: 100vw;
-  margin-left: calc(50% - 50vw); /* Ensures full width */
+  margin-left: calc(50% - 50vw);
 }
 
 header h1 {
@@ -44,7 +50,6 @@ header h1 {
   margin-bottom: 0.3em;
 }
 
-/* Navbar styling */
 nav {
   margin-top: 1.5em;
   display: flex;
@@ -82,7 +87,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Home Section Styling */
 section#home {
   padding: 4em 2em;
   text-align: center;
@@ -106,17 +110,89 @@ section#home p {
   margin: 0 auto;
 }
 
-/* Playlist embed adjustments */
-iframe.spotify-embed {
-  width: 100%;
-  max-width: 400px;
-  height: 80px; /* Adjusted to avoid excess space */
-  margin: 1em auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+#projects .container {
+  text-align: center;
 }
 
-/* Video styling */
+#projects section {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  color: #333;
+}
+
+#projects p {
+  line-height: 1.6;
+  color: #666;
+}
+
+#projects a {
+  color: #7ca9f7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #121df8;
+  text-decoration: underline;
+}
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+  width: 400px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #7c82f7;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 300px;
+  font-size: 1em;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #121df8;
+}
+
+form .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .video-container {
   max-width: 300px;
   margin: 1em auto;
@@ -127,16 +203,12 @@ iframe.spotify-embed {
   border-radius: 10px;
 }
 
-/* Full-width sticky footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 2em 0;
+  padding: 1.5em 0;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 
 footer a {
@@ -153,11 +225,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.container {
-  padding-bottom: 10px;
-}
-
-/* Responsive styling */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
