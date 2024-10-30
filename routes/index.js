@@ -1,20 +1,28 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-/* GET home page. */
-router.get("/", function (req, res, next) {
+// Home page route
+router.get("/", (req, res) => {
   res.render("index", { title: "Home" });
 });
-router.get("/projects", function (req, res, next) {
+
+// About page route
+router.get("/about", (req, res) => {
+  res.render("about", { title: "About Me" });
+});
+
+// Projects page route
+router.get("/projects", (req, res) => {
   res.render("projects", { title: "Projects" });
 });
-router.get("/about", function (req, res, next) {
-  res.render("about", { title: "About" });
-});
-router.get("/contact", function (req, res, next) {
+
+// Contact page route
+router.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact" });
 });
-router.get("/github", function (req, res, next) {
+
+// GitHub page route
+router.get("/github", (req, res) => {
   res.render("github", { title: "GitHub" });
 });
 
