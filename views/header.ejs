@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
     <title><%= title %></title>
 
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
   </head>
   <body>
-    <div class="wrapper">
-    <header>
-      <div class="container">
-        <h1>Chris Panetta</h1>
-        <nav>
-          <a href="/">Home</a>
-          <a href="about">About Me</a>
-          <a href="projects">Projects</a>
-          <a href="contact">Contact Me</a>
-          <a href="github">GitHub</a>
-        </nav>
-      </div>
-    </header>
+    <div class="container-fluid">
+      <header class="bg-light py-3">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between text-dark"
+        >
+          <h1 class="h3 mb-0 text-dark">Chris Panetta</h1>
+          <nav class="nav">
+            <a class="nav-link text-dark" href="/">Home</a>
+            <a class="nav-link text-dark" href="about">About Me</a>
+            <a class="nav-link text-dark" href="projects">Projects</a>
+            <a class="nav-link text-dark" href="contact">Contact Me</a>
+            <a class="nav-link text-dark" href="github">GitHub</a>
+          </nav>
+        </div>
+      </header>
+    </div>
   </body>
 </html>

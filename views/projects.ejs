@@ -1,53 +1,63 @@
 <%- include('header') %>
-<section id="projects">
+<section id="projects" class="py-5">
   <div class="container">
-    <h2>Projects</h2>
+    <h2 class="text-center mb-5">Projects</h2>
     <article>
-      <section>
-        <h3>The Smart Mirror Project</h3>
-        <p>
-          The Smart Mirror Project is a project that showcases the capabilities
-          of a Raspberry Pi in which it created an interactive display that also
-          doubled as a mirror which allowed the user to multitask while looking
-          at the mirror.
-        </p>
-        <a href="https://chrispanetta.com/">View Project</a>
-        <br />
-      </section>
-      <section>
-        <h3>Tri Site-To-Site VPN/Personal Intranet</h3>
-        <p>
-          The project involves setting up a tri-site network topology with a
-          site-to-site VPN with IPSec connecting three locations: PTA (Home),
-          PBH (Pearl Bridal House), and SIM (Dorm). Each site is connected via a
-          secure VPN tunnel, allowing seamless communication between devices
-          across different subnets. The network supports centralized backup
-          operations using Veeam Backup & Replication, where all critical
-          servers and desktops at each site are backed up to a centralized NAS
-          located at the PTA site and then backed up to the offsite NAS located
-          at the SIM site.
-        </p>
-        <a href="https://chrispanetta.com/">View Project</a>
-        <br />
-      </section>
-      <section>
-        <h3>FreshRSS Feed</h3>
-        <p>
-          The FreshRSS Feed is a web application that allows users to create and
-          manage RSS feeds. The application is built using the React framework.
-          I self hosted the application.
-        </p>
-        <br />
-        <p>Username is Chris and Password is dfm_nqp6muq0wxc!NFJ</p>
-        <br />
-        <iframe
-          src="https://freshrss.chrispanetta.com/"
-          title="FreshRSS Feed"
-          allowfullscreen
-          height="800px"
-          width="500px"
-        ></iframe>
-      </section>
+      <div class="mb-5">
+        <section class="mb-4">
+          <h3>The Smart Mirror Project</h3>
+          <p>
+            The Smart Mirror Project showcases the capabilities of a Raspberry
+            Pi, creating an interactive display that also doubles as a mirror,
+            allowing the user to multitask while using the mirror.
+          </p>
+          <a
+            href="https://chrispanetta.com/"
+            target="_blank"
+            class="btn btn-primary"
+            >View Project</a
+          >
+        </section>
+
+        <section class="mb-4">
+          <h3>Tri Site-To-Site VPN/Personal Intranet</h3>
+          <p>
+            This project involves setting up a tri-site network topology with a
+            site-to-site VPN using IPSec, connecting three locations: PTA
+            (Home), PBH (Pearl Bridal House), and SIM (Dorm). Each site is
+            linked via a secure VPN tunnel, supporting centralized backup using
+            Veeam Backup & Replication. All critical servers and desktops at
+            each site are backed up to a centralized NAS at the PTA site, with
+            offsite backup at the SIM site.
+          </p>
+          <a
+            href="https://chrispanetta.com/"
+            target="_blank"
+            class="btn btn-primary"
+            >View Project</a
+          >
+        </section>
+
+        <section class="mb-4">
+          <h3>FreshRSS Feed</h3>
+          <p>
+            The FreshRSS Feed is a self-hosted web application for creating and
+            managing RSS feeds, built using the React framework.
+          </p>
+          <p>
+            <strong>Username:</strong> Chris <br />
+            <strong>Password:</strong> dfm_nqp6muq0wxc!NFJ
+          </p>
+          <iframe
+            src="https://freshrss.chrispanetta.com/"
+            title="FreshRSS Feed"
+            allowfullscreen
+            height="800px"
+            width="100%"
+            class="border rounded mt-3"
+          ></iframe>
+        </section>
+      </div>
     </article>
   </div>
 </section>
